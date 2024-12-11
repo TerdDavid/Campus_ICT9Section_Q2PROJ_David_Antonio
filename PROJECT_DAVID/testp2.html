@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recipe Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1479150928156-423a69d91fe0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: 'Courier New', monospace;
+        }
+        h1 {
+            color: white;
+            background-color: rgba(100, 0, 0, 0.4);
+            padding: 10px 30px;
+            border-radius: 10px;
+            font-size: 4rem;
+            text-align: center;
+        }
+        .navbar {
+            background-color: white;
+        }
+        .navbar-brand, .nav-link {
+            color: darkred;
+        }
+        .nav-link:hover {
+            color: black;
+        }
+
+        
+        .category-label {
+            text-align: center;
+            color: white;
+            background-color: rgba(100, 0, 0, 0.5);
+            padding: 3px 15px; 
+            font-size: 1.2rem; 
+            font-weight: bold;
+            margin: 15px 0 5px;
+            border-radius: 5px;
+        }
+
+        .food-box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 50px 0;
+        }
+        .food-box {
+            background-color: rgba(128, 128, 128, 0.6);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            width: 30%;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .food-box img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border: 5px solid gold;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .food-box h3 {
+            color: white;
+            background-color: rgba(100, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .recipe-btn {
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .recipe-btn:hover {
+            background-color: #c82333;
+        }
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+        <div class="container-fluid">
+            <a href="proj.html" title="Chef's Logo">
+                <img src="https://www.freeiconspng.com/uploads/chef-hat-png-21.png" width="60" alt="Chef Hat Logo">
+            </a>
+            <a class="navbar-brand" href="proj.html">Tort's</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">-Homepage-</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">-Recipes-</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">-Feature Dish Recipe-</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-danger ms-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <header class="mt-5 pt-5">
+        <h1>Recipe Categories</h1>
+    </header>
+
+
+    <div class="category-label">Main Dishes</div>
+    <div class="food-box-container">
+    
+        <div class="food-box">
+            <h3>Main Dish 1</h3>
+            <img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/FamilySize-QNE-BeefCaldereta-Featured.jpg">
+            <p>Beef Caldereta</p>
+            <a href="wow.html">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+        
+        <div class="food-box">
+            <h3>Main Dish 2</h3>
+            <img src="https://www.maggi.ph/sites/default/files/styles/home_stage_1500_700/public/srh_recipes/41d16b3eb7ce08aba9e9114f304f5d87.jpg?h=28121b77&itok=thJoFsmE">
+            <p>Adobo</p>
+            <a href="https://www.knorr.com/ph/tips-and-tricks/adobo-recipes.html?gclsrc=aw.ds&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMg9jCSQhNEzwGzeFJr_Z9g7F024WAVJ7z9fsJTdBfKzkFJqeBjYPNxoClysQAvD_BwE">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+      
+        <div class="food-box">
+            <h3>Main Dish 3</h3>
+            <img src="https://www.kawalingpinoy.com/wp-content/uploads/2019/12/inihaw-liempo-3-768x1024.jpg">
+            <p>Liempo</p>
+            <a href="https://panlasangpinoy.com/filipino-food-grilled-pork-belly-inihaw-na-liempo-baboy-recipe/">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+    </div>
+
+    
+    <div class="category-label">Appetizers</div>
+    <div class="food-box-container">
+   
+        <div class="food-box">
+            <h3>Lumpia</h3>
+            <img src="https://www.allrecipes.com/thmb/D4LHv4glOgGMtHr9C860DALmLSs=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/traditional-filipino-lumpia-photo-by-kims-cooking-now-7535265-2000-6e3307802c804e8b890e89dd12e56efa.jpg">
+            <p>Lumpia</p>
+            <a href="https://www.maggi.ph/search?range=12&searchpage=true&search_key=lumpiang%20shanghai&type=rezepte&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMvvO9tc0GEPrndvR8Fy18Aat-WIOciFYNdtGtCjF42eZG6tzLzf45hoCJxoQAvD_BwE&page=undefined">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+     
+        <div class="food-box">
+            <h3>Appetizer 2</h3>
+            <img src="https://assets.unileversolutions.com/v1/106602218.png?im=Resize,width=1200,height=1200">
+            <p>Cheese sticks</p>
+            <a href="https://www.kawalingpinoy.com/cheese-sticks/>
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+        
+        <div class="food-box">
+            <h3>Appetizer 3</h3>
+            <img src="https://www.foxyfolksy.com/wp-content/uploads/2016/11/okoy.jpg">
+            <p>Ukoy</p>
+            <a href="https://panlasangpinoy.com/ukoy-shrimp-fritters-recipe/">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+    </div>
+
+  
+    <div class="category-label">Drinks</div>
+    <div class="food-box-container">
+      
+        <div class="food-box">
+            <h3>Drink 1</h3>
+            <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/Mango-Smoothie-4-2.jpg">
+            <p>Mango Smoothie</p>
+            <a href="https://downshiftology.com/recipes/mango-smoothie/">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+    
+        <div class="food-box">
+            <h3>Drink 2</h3>
+            <img src="https://www.allrecipes.com/thmb/3jPembDGRufYWZZsN276uWpSvgA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/32385-best-lemonade-ever-DDMFS-4x3-8cef7761205e417499c89eb178e5ba2b.jpg">
+            <p>Fresh Lemonade</p>
+            <a href="https://sugarspunrun.com/homemade-lemonade-recipe/">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+        <div class="food-box">
+            <h3>Drink 3</h3>
+            <img src="https://www.allrecipes.com/thmb/aizVUz1JlBwSPI_hrH4Wu1XFXSE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/21667-easy-iced-coffee-ddmfs-4x3-0093-7becf3932bd64ed7b594d46c02d0889f.jpg">
+            <p>Iced Coffee</p>
+            <a href="https://www.allrecipes.com/recipe/21667/easy-iced-coffee/">
+                <button class="recipe-btn">Recipe</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
